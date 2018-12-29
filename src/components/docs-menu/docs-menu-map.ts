@@ -7,12 +7,12 @@ export const main = {
     'Versioning': '/docs/intro/versioning',
     'Support': '/docs/intro/support'
   },
-  'Installation': {
-    'CLI Installation':  '/docs/installation/cli',
-    'Packages & CDN': '/docs/installation/cdn',
-    'Environment Setup': '/docs/installation/environment',
-    'iOS Setup': '/docs/installation/ios',
-    'Android Setup': '/docs/installation/android',
+  'インストール': {
+    'Ionicのインストール':  '/docs/installation/cli',
+    'PackagesとCDN': '/docs/installation/cdn',
+    '環境設定': '/docs/installation/environment',
+    'iOSセットアップ': '/docs/installation/ios',
+    'Androidセットアップ': '/docs/installation/android',
   },
   'Building': {
     'Starting': '/docs/building/starting',

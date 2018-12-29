@@ -1,7 +1,3 @@
----
-previousText: 'Web View'
-previousUrl: '/docs/building/webview'
----
 
 # Storage
 

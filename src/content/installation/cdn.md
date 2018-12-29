@@ -1,44 +1,43 @@
 ---
-previousText: 'Ionic CLI'
+previousText: 'Ionicのインストール'
 previousUrl: '/docs/installation/cli'
-nextText: 'Environment Setup'
+nextText: '環境設定'
 nextUrl: '/docs/installation/environment'
 ---
 
 # Ionic Packages
 
 <p class="intro" markdown="1">
-  Depending on whether you're using Angular or another framework (or none at all!) there are different ways to install Ionic.
+  Ionicをインストールする方法は、あなたがAngularを使うのか、他のフレームワークを使うのか（もしくは使わないのか）によって変わります。
 </p>
 
-## Using Ionic in Angular
+## AngularでIonicをつかう
 
-When using Angular, install the `@ionic/angular` package. This comes with all the Ionic components and Angular-specific services and features.
+Angularを使うときは、`@ionic/angular`パッケージをインストールしてください。これには、すべてのIonicコンポーネントと、IonicをAngularで使うための機能が含まれています。
 
-## Using Ionic from a CDN
+## CDNでIonicをつかう
 
-Not using Angular? Ionic can also be used directly from a CDN using a simple script include!
+Ionicは、簡単に`<script>`タグを使用してCDNから直接利用することもできます。
 
-It's recommended to use [unpkg](https://unpkg.com) to access the Framework from a CDN. To get the latest version, add the following `script` tag inside the `<head></head>` element in an HTML file:
+CDNをつかってIonic Frameworkにアクセスするためには、[unpkg](https://unpkg.com)を使うことをおすすめします。最新版を入手するには、HTMLファイルの`<head></head>`要素内に`script`タグを追加します。
 
 ```javascript
 <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
 ```
 
-With this it's possible to use all of the Ionic components without having to install anything.
+これで、何もインストールしなくても、すべてのIonicコンポーネントを利用することができます。
 
 <blockquote>
   <p>
-    This does not install Angular or any frameworks. This allows use of Ionic components without having to install anything.
+    これはAngularなどフレームワークをインストールしません。`<script>`タグを利用することにより、何もインストールしなくてもIonicコンポーネントを使用できます。
   </p>
 </blockquote>
 
 
-## Ionicons from a CDN
+## CDNでIoniconsをつかう
 
-If you're using Ionic Framework, Ionicons is packaged by default, so no installation is necessary. Want to use Ionicons without Ionic Framework? Place the following `<script>` near the end of your page, right before the closing `</body>` tag,to enable them.
+Ionic Frameworkを使用している場合、Ioniconsはデフォルトでパッケージに含まれているので、インストールは不要です。もしIonic FrameworkなしにIoniconsを使う場合は、次の`<script>`のコードを閉じタグ`</body>`の直前に配置します。
 
 ```javascript
 <script src="https://unpkg.com/ionicons@4.0.0/dist/ionicons.js"></script>
 ```
-

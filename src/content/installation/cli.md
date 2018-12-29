@@ -1,14 +1,14 @@
 ---
-previousText: 'What is Ionic Framework'
+previousText: 'Ionic Frameworkとは'
 previousUrl: '/docs/intro'
-nextText: 'Packages & CDN'
+nextText: 'PackagesとCDN'
 nextUrl: '/docs/installation/cdn'
 ---
 
 # Ionicのインストール
 
 <p class="intro" markdown="1">
-Ionicアプリは、主にIonic CLI（[command-line-interface](/docs/faq/glossary#cli)）を利用して作成・開発します。Ionic CLIは、幅広い開発ツールと手助けする選択肢とオプションを提供しているので、Ionic teamが推奨しているインストール方法です。Ionic CLIを使うと、アプリを実行することや、Ionic Proなどの他のサービスに接続できる重要なツールです。
+Ionicアプリは、主にIonic CLI（[command-line-interface](/docs/faq/glossary#cli)）を利用して作成・開発します。Ionic CLIは、幅広い開発ツールと開発を手助けするオプションを提供している、Ionic teamが推奨しているインストール方法です。Ionic CLIは、アプリの実行や、Ionic Appflowといった他のサービスに接続などができる重要なツールです。
 </p>
 
 ## Ionic CLIをインストール
