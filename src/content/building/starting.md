@@ -3,7 +3,7 @@ nextText: 'Scaffolding'
 nextUrl: '/docs/building/scaffolding'
 ---
 
-# アプリ開発を始める
+# アプリ開発をはじめる
 
 <p class="intro" markdown="1">
 新しくIonicアプリを始めるのはとても簡単です。 コマンドラインで `ionic start` を入力すれば、CLIが残りの処理をうまくやってくれます。

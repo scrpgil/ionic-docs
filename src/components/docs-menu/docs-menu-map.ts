@@ -14,8 +14,8 @@ export const main = {
     'iOSセットアップ': '/docs/installation/ios',
     'Androidセットアップ': '/docs/installation/android',
   },
-  'Building': {
-    'Starting': '/docs/building/starting',
+  '構築方法': {
+    'はじめ方': '/docs/building/starting',
     'Scaffolding': '/docs/building/scaffolding',
     'Migration': '/docs/building/migration',
     'Cross Platform': '/docs/building/cross-platform',
