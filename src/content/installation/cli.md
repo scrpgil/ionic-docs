@@ -5,7 +5,7 @@ nextText: 'PackagesとCDN'
 nextUrl: '/docs/installation/cdn'
 ---
 
-# Ionicのインストール
+# CLIのインストール
 
 <p class="intro" markdown="1">
 Ionicアプリは、主にIonic CLI（[command-line-interface](/docs/faq/glossary#cli)）を利用して作成・開発します。Ionic CLIは、幅広い開発ツールと開発を手助けするオプションを提供している、Ionic teamが推奨しているインストール方法です。Ionic CLIは、アプリの実行や、Ionic Appflowといった他のサービスに接続などができる重要なツールです。

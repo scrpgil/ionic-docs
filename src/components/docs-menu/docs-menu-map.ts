@@ -8,7 +8,7 @@ export const main = {
     'Support': '/docs/intro/support'
   },
   'インストール': {
-    'Ionicのインストール':  '/docs/installation/cli',
+    'CLIのインストール':  '/docs/installation/cli',
     'PackagesとCDN': '/docs/installation/cdn',
     '環境設定': '/docs/installation/environment',
     'iOSセットアップ': '/docs/installation/ios',

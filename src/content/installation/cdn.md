@@ -1,5 +1,5 @@
 ---
-previousText: 'Ionicのインストール'
+previousText: 'CLIのインストール'
 previousUrl: '/docs/installation/cli'
 nextText: '環境設定'
 nextUrl: '/docs/installation/environment'
