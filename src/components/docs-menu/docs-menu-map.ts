@@ -4,8 +4,8 @@ export const main = {
     'Ionic Frameworkとは': '/docs/intro',
     'Core Concepts': '/docs/intro/concepts',
     'ブラウザサポート': '/docs/intro/browser-support',
-    'Versioning': '/docs/intro/versioning',
-    'Support': '/docs/intro/support'
+    'バージョニング': '/docs/intro/versioning',
+    'サポート': '/docs/intro/support'
   },
   'インストール': {
     'CLIのインストール':  '/docs/installation/cli',

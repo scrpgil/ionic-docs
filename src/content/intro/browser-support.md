@@ -1,7 +1,7 @@
 ---
 previousText: 'Core concepts'
 previousUrl: '/docs/intro/concepts'
-nextText: 'Versioning'
+nextText: 'バージョニング'
 nextUrl: '/docs/intro/versioning'
 ---
 
