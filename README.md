@@ -34,6 +34,19 @@ __なお、これによって生成したファイルは翻訳してはいけま
 
 `src/content/intro.md` -> `/docs/intro`
 
+### 表記揺れ対応
+| 元表記 | 日本語表記 | 備考 |
+|:---|:---:|---:|
+| Components |コンポーネント | 一般用語 |
+| Function/Functions | 機能 | 一般用語 |
+| Test | テスト | 一般用語 |
+| Page/Pages | Page | Ionic v3の特定機能を指す場合 |
+| Component/Components | Component | Angularの特定機能を指す場合。ただし、UIパーツを指す場合は「コンポーネント」と日本語表記。 |
+| Service/Services | Service | Angularの特定機能を指す場合 |
+| Pipe/Pipes | Pipe | Angularの特定機能を指す場合 |
+| Module/Modules | Module | Angularの特定機能を指す場合 |
+| Lazy Loading | Lazy Loading | 一般用語 |
+
 
 ## 翻訳作業について
 ### コントリビューションのお願い
