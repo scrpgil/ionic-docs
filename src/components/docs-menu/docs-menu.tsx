@@ -201,7 +201,7 @@ export class DocsMenu {
                 class="menu__item menu__item--outbound migration-pill"
                 url="/docs/building/migration"
                 exact>
-                  v4 Migration Guide
+                  v4への移行ガイド
                   <svg viewBox="0 0 16 24">
                     <path d="M3 2l10 10L3 22" stroke-width="3" fill="none" fill-rule="evenodd"/>
                   </svg>
@@ -230,7 +230,7 @@ export class DocsMenu {
                 class="menu__item menu__item--outbound migration-pill"
                 url="/docs/building/migration"
                 exact>
-                  v4 Migration Guide
+                  v4への移行ガイド
                   <svg viewBox="0 0 16 24">
                     <path d="M3 2l10 10L3 22" stroke-width="3" fill="none" fill-rule="evenodd"/>
                   </svg>

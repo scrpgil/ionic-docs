@@ -16,8 +16,8 @@ export const main = {
   },
   '構築方法': {
     'はじめ方': '/docs/building/starting',
-    'Scaffolding': '/docs/building/scaffolding',
-    'Migration': '/docs/building/migration',
+    'アプリ開発の基本': '/docs/building/scaffolding',
+    'v4への移行': '/docs/building/migration',
     'Cross Platform': '/docs/building/cross-platform',
     'Running Overview': '/docs/building/running',
     'Running on iOS': '/docs/building/ios',
