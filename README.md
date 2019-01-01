@@ -21,18 +21,46 @@ $ npm run dev
 $ npm run predocgen && npm run docgen
 ```
 
-__なお、これによって生成したファイルは翻訳してはいけません。__
-以下のフォルダ以下のファイルは、ソースファイルのコメントアウトから自動生成するため編集しないようにしてください。
+__なお、これによって生成したファイルは通常翻訳できません。__
+以下のフォルダ以下のファイルは、ソースファイルのコメントアウトから自動生成するため、必ず置換翻訳するようにしてください。
 
 - `src/content/api/`
 - `src/content/cli/commands/`
 - `src/content/native`
 
 ### 翻訳ファイル
+#### 通常翻訳
 
-翻訳を行うファイルは `src/content` 以下に格納されています。表示されるURLと、「フォルダ/ファイル名」は致するようになっておりますので、ご参考ください。
+翻訳を行うファイルは `src/content` 以下に格納されています。表示されるURLと、「フォルダ/ファイル名」は一致するようになっておりますので、ご参考ください。
 
 `src/content/intro.md` -> `/docs/intro`
+
+#### 置換翻訳
+ソースファイルから自動生成されるドキュメントは上書き対応のため、置換翻訳するようにします。どのようなものかを知るために、まず以下の翻訳ファイルをご覧ください。
+https://github.com/ionic-jp/ionic-docs/blob/master/translate/ja/components.json
+
+`translate`のkeyが原文、valueが翻訳後となっています。こういったファイルを生成し、サーバ上で自動置換・コンパイルを行います。
+
+作業手順は以下の通りです。
+
+1. npmコマンドで翻訳ファイルを生成する
+```bash
+$ npm run trans:create ja 【ファイルパス】
+```
+
+例えばAPIのaction-sheet.md（`src/content/api/action-sheet.md`）を翻訳する場合、ファイルパスは`api/`以下となりますので
+
+
+```bash
+$ npm run trans:create ja api/action-sheet.md
+```
+
+とご入力ください。そうすると自動的に`translate/ja/api/action-sheet.json`が生成されます。その後、`translate`に、key-valueで原文-翻訳をご入力ください。
+なお、翻訳を元ファイルに適用するには以下コマンドを実行ください。
+
+```bash
+$ npm run trans ja
+```
 
 ### 表記揺れ対応
 | 元表記 | 日本語表記 | 備考 |

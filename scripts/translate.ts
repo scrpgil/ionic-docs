@@ -1,17 +1,10 @@
-import { readFileSync, readdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
+const documentDirectories = ['', 'building/', 'api/', 'cli/', 'cli/commands/', 'content/native/'];
 
-let lang;
-if (process.argv.length >= 3) {
-  lang = process.argv[2];
-}
-// } else {
-//   throw '[error] can not get language. Please add argv[2].';
-// }
-
-(async () => {
+async function apply(lang: string) {
   let fileList: string[] | any = [];
 
-  for (const d of ['', 'building/']) {
+  for (const d of documentDirectories) {
     const directory = process.cwd() + '/translate/' + lang + '/' + d;
     let files: string[] | any = readdirSync(directory, { encoding: 'UTF8' });
     files = files
@@ -30,8 +23,54 @@ if (process.argv.length >= 3) {
     let resourceText = readFileSync(process.cwd() + '/src/content/' + transFile.target, { encoding: 'UTF8' });
 
     for (const key of Object.keys(transLang)) {
-      resourceText = resourceText.replace(new RegExp(key.replace(/[-\/\\^$*+?.()|\[\]{}]/g, '\\$&'), 'g'), transLang[key]);
+      if (key.length > 0 && transLang[key].length > 0) {
+        resourceText = resourceText.replace(new RegExp(key.replace(/[-\/\\^$*+?.()|\[\]{}]/g, '\\$&'), 'g'), transLang[key]);
+      }
     }
     writeFileSync(process.cwd() + '/src/content/' + transFile.target, resourceText, { encoding: 'UTF8' });
+  }
+}
+
+async function create(lang: string, path: string) {
+  path = path.replace('src/', '').replace('content/', '');
+  const includeFlg = documentDirectories.find(data => {
+    if (!data) {
+      return false;
+    }
+    return (path.indexOf(data) !== -1);
+  });
+  if (!includeFlg) {
+    Error('[error] path is disable string.');
+    return;
+  }
+  const resourceText = readFileSync(process.cwd() + '/src/content/' + path, { encoding: 'UTF8' });
+  if (!resourceText) {
+    Error('[error] path is not exist file.');
+    return;
+  }
+
+  const json = JSON.stringify({
+    target: path,
+    translate: {}
+  });
+
+  const writeFileName = process.cwd() + '/translate/' + lang + '/' + path.replace('md', 'json');
+  if (!existsSync(writeFileName.split('/').reverse().slice(1).reverse().join('/'))) {
+    mkdirSync(writeFileName.split('/').reverse().slice(1).reverse().join('/'));
+  }
+  if (existsSync(writeFileName)) {
+    Error('[error] translate file exist.');
+    return;
+  }
+  writeFileSync(writeFileName, json, { encoding: 'UTF8' });
+}
+
+(async () => {
+  if (process.argv[2] === 'apply') {
+    apply(process.argv[3]);
+  }
+
+  if (process.argv[2] === 'create' && process.argv[3] && process.argv[4]) {
+    create(process.argv[3], process.argv[4]);
   }
 })();

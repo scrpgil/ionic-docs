@@ -25,8 +25,9 @@
     "prelocalize": "tsc -p scripts/tsconfig.json",
     "download": "node scripts/build/scripts/download",
     "predownload": "tsc -p scripts/tsconfig.json",
-    "translation": "npm run docgen && tsc -p scripts/tsconfig.json && node scripts/build/scripts/translate.js ja",
-    "netlify": "npm run translation && npm run build && cp scripts/netlify/index.html www/index.html"
+    "trans": "npm run docgen && tsc -p scripts/tsconfig.json && node scripts/build/scripts/translate.js apply",
+    "trans:create": "tsc -p scripts/tsconfig.json && node scripts/build/scripts/translate.js create",
+    "build:jp": "npm run trans ja && npm run build && cp scripts/netlify/index.html www/index.html"
   },
   "dependencies": {
     "@stencil/core": "^0.16.0",
