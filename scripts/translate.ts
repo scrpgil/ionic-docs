@@ -6,6 +6,9 @@ async function apply(lang: string) {
 
   for (const d of documentDirectories) {
     const directory = process.cwd() + '/translate/' + lang + '/' + d;
+    if (!existsSync(directory)) {
+      continue;
+    }
     let files: string[] | any = readdirSync(directory, { encoding: 'UTF8' });
     files = files
       .filter(file => {
