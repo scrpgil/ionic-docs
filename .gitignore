@@ -27,5 +27,7 @@ src/content/native
 # (except these)
 !/src/content/native/index.md
 
+src/content/components.md
+src/content/building/storage.md
 src/content/component-preview-app/
 src/components/docs-menu/docs-api-map.ts
