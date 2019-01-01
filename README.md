@@ -55,7 +55,8 @@ $ npm run trans:create ja 【ファイルパス】
 $ npm run trans:create ja api/action-sheet.md
 ```
 
-とご入力ください。そうすると自動的に`translate/ja/api/action-sheet.json`が生成されます。その後、`translate`に、key-valueで原文-翻訳をご入力ください。
+とご入力ください。そうすると自動的に`translate/ja/api/action-sheet.json`が生成されます。その後、`translate`に、key-valueで原文-翻訳をご入力ください。一行ずつ翻訳いただきますようお願いいたします。
+
 なお、翻訳を元ファイルに適用するには以下コマンドを実行ください。
 
 ```bash
