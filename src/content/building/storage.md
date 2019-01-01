@@ -1,33 +1,33 @@
 
 # Storage
 
-<p class="intro">Storage is an easy way to store key/value pairs and JSON objects.
-Storage uses a variety of storage engines underneath, picking the best one available
-depending on the platform.</p>
+<p class="intro">Storageは、keyとvalueのセットで簡単に保存できる方法で、JSON objectsも使えます。
+Storageは、さまざまなストレージエンジンを利用することができ、プラットフォームに応じて利用可能な
+最も適したものを選びます。</p>
 
-When running in a native app context, Storage will prioritize using SQLite, as it's one of
-the most stable and widely used file-based databases, and avoids some of the
-pitfalls of things like localstorage and IndexedDB, such as the OS deciding to clear out such
-data in low disk-space situations.
+ネイティブアプリとしてアプリケーションを実行する場合、Storageは最も安定して広く使用されているファイルベースの
+データベースの1つであるSQLiteを使用することを優先し、
+ディスク容量が少ない状況では落とし穴となるlocalstorageや
+IndexedDBといったストレートエンジンを避けます。
 
-When running in the web or as a Progressive Web App, Storage will attempt to use
-IndexedDB, WebSQL, and localstorage, in that order.
-
-
-## Usage
+WebまたはProgressive Web Appとして実行している場合、StorageはIndexedDB、WebSQL、
+localstorageの順に使用しようとします。
 
 
-First, if you'd like to use SQLite, install the cordova-sqlite-storage plugin:
+## 使い方
+
+
+SQLiteを使いたい場合は、cordova-sqlite-storageプラグインをインストールしてください。
 ```bash
 ionic cordova plugin add cordova-sqlite-storage
 ```
 
-Next, install the package (comes by default for Ionic apps > Ionic V1):
+パッケージをインストールします（Ionic v1以上のバージョンのIonicアプリで利用ください）。
 ```bash
 npm install --save @ionic/storage
 ```
 
-Next, add it to the imports list in your `NgModule` declaration (for example, in `src/app/app.module.ts`):
+`NgModule` デコレーターに追加します (例えば`src/app/app.module.ts`に追加ください):
 
 ```typescript
 import { IonicStorageModule } from '@ionic/storage';
@@ -52,7 +52,7 @@ import { IonicStorageModule } from '@ionic/storage';
 export class AppModule {}
 ```
 
-Finally, inject it into any of your components or pages:
+最後に、ComponentやPageにStorageを挿入します。
 ```typescript
 import { Storage } from '@ionic/storage';
 
@@ -72,12 +72,12 @@ export class MyApp {
 ```
 
 
-### Configuring Storage
+### Storageの設定
 
 The Storage engine can be configured both with specific storage engine priorities, or custom configuration
 options to pass to localForage. See the localForage config docs for possible options: https://github.com/localForage/localForage#configuration
 
-Note: Any custom configurations will be merged with the default configuration
+Note: どのカスタム設定も、デフォルトの設定と統合されます
 
 ```typescript
 import { IonicStorageModule } from '@ionic/storage';
