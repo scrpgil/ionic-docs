@@ -27,7 +27,7 @@ export const main = {
     'Web View': '/docs/building/webview',
     'Ionic Storage': '/docs/building/storage',
   },
-  'Components': '/docs/components',
+  'コンポーネント': '/docs/components',
   'Layout': {
     'Structure': '/docs/layout/structure',
     'Responsive Grid': '/docs/layout/grid',
