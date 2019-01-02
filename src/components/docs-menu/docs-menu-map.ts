@@ -28,8 +28,8 @@ export const main = {
     'Ionic Storage': '/docs/building/storage',
   },
   'コンポーネント': '/docs/components',
-  'Layout': {
-    'Structure': '/docs/layout/structure',
+  'レイアウト': {
+    '構造': '/docs/layout/structure',
     'Responsive Grid': '/docs/layout/grid',
     'CSS Utilities': '/docs/layout/css-utilities'
     //    'RTL Support': '/docs/layout/rtl'
