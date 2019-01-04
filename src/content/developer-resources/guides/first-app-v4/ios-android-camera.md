@@ -96,7 +96,7 @@ providers: [
 
 It can now be used on any of our App pages.
 
-## Add the Camera to the About page
+## Add the Camera to the Gallery page
 
 Our camera button doesn’t do anything yet. Over in `tab2.page.html`, add a click handler to the button:
 
@@ -126,7 +126,7 @@ Next, define the “currentImage” variable and inject the Camera into this cla
 export class Tab2Page {
   currentImage: any;
 
-  constructor(private camera: Camera) {
+  constructor(private camera: Camera) { }
 }
 ```
 
