@@ -73,6 +73,7 @@ $ npm run trans ja
 | Component/Components | Component | Angularの特定機能を指す場合。ただし、UIパーツを指す場合は「コンポーネント」と日本語表記。 |
 | Service/Services | Service | Angularの特定機能を指す場合 |
 | Pipe/Pipes | Pipe | Angularの特定機能を指す場合 |
+| Provider/Providers | Provider | Angularの特定機能を指す場合 |
 | Module/Modules | Module | Angularの特定機能を指す場合 |
 | Lazy Loading | Lazy Loading | 一般用語 |
 
