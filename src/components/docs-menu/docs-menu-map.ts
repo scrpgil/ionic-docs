@@ -18,7 +18,7 @@ export const main = {
     'はじめ方': '/docs/building/starting',
     'アプリ開発の基本': '/docs/building/scaffolding',
     'v4への移行': '/docs/building/migration',
-    'Cross Platform': '/docs/building/cross-platform',
+    'クロスプラットフォーム': '/docs/building/cross-platform',
     'アプリ開発の概要': '/docs/building/running',
     'iOSでの開発': '/docs/building/ios',
     'Androidでの開発': '/docs/building/android',
@@ -50,10 +50,10 @@ export const main = {
     'Android Play Store': '/docs/publishing/play-store',
     'Electron Desktop App': '/docs/publishing/desktop-app'
   },
-  'FAQ': {
+  'よくある質問': {
     'Glossary': '/docs/faq/glossary',
     'Build Errors': '/docs/faq/build',
-    'Runtime Errors': '/docs/faq/runtime',
+    'ランタイムエラー': '/docs/faq/runtime',
     'Native Errors': '/docs/faq/native',
     'Developer Tips': '/docs/faq/tips',
     'Changelog': 'https://github.com/ionic-team/ionic/blob/master/CHANGELOG.md'
