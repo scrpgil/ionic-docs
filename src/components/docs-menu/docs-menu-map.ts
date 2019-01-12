@@ -34,11 +34,11 @@ export const main = {
     'CSSユーティリティ': '/docs/layout/css-utilities'
     //    'RTL Support': '/docs/layout/rtl'
   },
-  'Theming': {
+  'テーマのカスタマイズ': {
     'Basics': '/docs/theming/basics',
     'Platform Styles': '/docs/theming/platform-styles',
     'CSS Variables': '/docs/theming/css-variables',
-    'Color Generator': '/docs/theming/color-generator',
+    'カラージェネレーター': '/docs/theming/color-generator',
     'Advanced': '/docs/theming/advanced'
   },
   'Navigation': {
