@@ -177,7 +177,7 @@ async showAlert() {
 
 v4では、ナビゲーションが最も多くの変更がありました。`NavController`はオリジナルのものを使わずに、公式のAngular Routerと統合しました。これは、アプリケーション間で一貫したルーティング体験を提供するだけでなく、はるかに信頼性が高くなります。Angularチームのdocsサイトには、ルーターの詳細を網羅した<a href="http://angular.io/guide/router" target="_blank">excellent guide</a>があります。
 
-ユーザーが慣れ親しんでいるプラットフォーム固有のアニメーションを提供するために、`ion-router-outlet`をAngularアプリ用に作成しました。これはAngularの場合と同様に`rouer-outlet`機能しますが、スタックベースのナビゲーション（tabs）とアニメーションを提供します。
+ユーザーが慣れ親しんでいるプラットフォーム固有のアニメーションを提供するために、`ion-router-outlet`をAngularアプリ用に作成しました。これはAngularの場合と同様に`router-outlet`機能しますが、スタックベースのナビゲーション（tabs）とアニメーションを提供します。
 
 v4プロジェクトでのナビゲーション機能の詳細な説明は、[Angular navigation guide](/docs/navigation/angular)をご覧ください。
 
