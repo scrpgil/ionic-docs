@@ -2,11 +2,10 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'command-line',
-  styleUrl: 'command-line.scss',
-  shadow: true,
+  styleUrl: 'command-line.css'
 })
 export class CommandLine {
-  @Prop() nobuttons: boolean;
+  @Prop({ reflectToAttr: true }) nobuttons: boolean;
 
   renderButtons() {
     return (

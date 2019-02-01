@@ -1,33 +1,9 @@
 .idea/
-.vscode/
-*.sw*
-.tmp/
-.stencil/
 .DS_Store
-.env
-stencil-stats.json
 node_modules/
-npm-debug.log*
-
-# Ignored folders
-scripts/build
-server/build
-dist/
-sources/
+.stencil/
 www/
-
-# Auto-generated API docs
-src/content/api/
-
-# Auto-generated CLI docs
-src/content/cli/commands/*.md
-
-# Auto-generated Ionic Native docs
-src/content/native
-# (except these)
-!/src/content/native/index.md
-
-src/content/components.md
-src/content/building/storage.md
-src/content/component-preview-app/
-src/components/docs-menu/docs-api-map.ts
+src/pages/**/*.json
+src/components/menu/data/
+src/components/page/data/
+src/components/search/data/

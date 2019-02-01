@@ -2,7 +2,7 @@ import { Component } from '@stencil/core';
 
 @Component({
   tag: 'command-prompt',
-  styleUrl: 'command-prompt.scss',
+  styleUrl: 'command-prompt.css',
 })
 export class CommandPrompt {
   render() {

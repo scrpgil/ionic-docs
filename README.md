@@ -35,6 +35,17 @@ __なお、これによって生成したファイルは通常翻訳できませ
 
 `src/content/intro.md` -> `/docs/intro`
 
+#### Editing Content
+
+The content is written as Markdown and stored in `src/pages`. Each Markdown file corresponds to a route. For example, `src/pages/intro.md` contains the content for the route `/docs/intro`.
+
+After you've made changes, you'll need to rebuild the pages:
+
+```shell
+npm run build-pages # Build once
+npm run watch-pages # Build continuously
+```
+
 #### 置換翻訳
 ソースファイルから自動生成されるドキュメントは上書き対応のため、置換翻訳するようにします。どのようなものかを知るために、まず以下の翻訳ファイルをご覧ください。
 https://github.com/ionic-jp/ionic-docs/blob/master/translate/ja/components.json
