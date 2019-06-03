@@ -1,5 +1,5 @@
 import '@ionic/core';
-import { Component, Prop, State, Watch } from '@stencil/core';
+import { Component, Prop, State, Watch, h } from '@stencil/core';
 import { LocationSegments, RouterHistory } from '@stencil/router';
 
 @Component({

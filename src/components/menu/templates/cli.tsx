@@ -1,3 +1,4 @@
+import { h } from '@stencil/core';
 import commands from '../data/cli-commands.json';
 
 export default () => <docs-nav items={items}/>;

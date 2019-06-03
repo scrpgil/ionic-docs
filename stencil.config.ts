@@ -6,10 +6,9 @@ export const config: Config = {
     {
       type: 'www',
       dir: 'www/docs',
-      baseUrl: '/docs',
+      baseUrl: 'http://localhost/docs',
       serviceWorker: null,
       empty: false,
-      inlineLoaderScript: false
     }
   ],
   copy: [

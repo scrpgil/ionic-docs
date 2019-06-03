@@ -1,4 +1,4 @@
-import { Component, Prop, State, Watch } from '@stencil/core';
+import { Component, Prop, State, Watch, h } from '@stencil/core';
 import { RouterHistory } from '@stencil/router';
 import { Page } from '../../definitions';
 import templates from './templates';

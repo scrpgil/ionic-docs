@@ -1,4 +1,4 @@
-import { Component, Element, Listen, Method, Prop, State } from '@stencil/core';
+import { Component, Element, Listen, Method, Prop, State, h } from '@stencil/core';
 import { DownArrow } from '../../icons';
 
 @Component({
