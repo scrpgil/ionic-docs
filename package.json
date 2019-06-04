@@ -16,7 +16,7 @@
     "build-pages": "ts-node -P scripts/tsconfig.json scripts/build-pages",
     "build-menus": "ts-node -P scripts/tsconfig.json scripts/build-menus",
     "watch-pages": "ts-node -P scripts/tsconfig.json scripts/watch-pages",
-    "build-case": "git clone https://github.com/ionic-jp/who-use-ionic.git case && cd case && npm i && npm run build && cd .. && mv case/www www/case && rm -rf case && echo '/case/* /case/index.html 200' >> www/_redirects",
+    "build-case": "git clone https://github.com/scrpgil/who-use-ionic.git case && cd case && npm i && npm run build && cd .. && mv case/www www/case && rm -rf case && echo '/case/* /case/index.html 200' >> www/_redirects",
     "translate": "ts-node -P scripts/tsconfig.json scripts/build-translate apply",
     "translate:create": "ts-node -P scripts/tsconfig.json scripts/build-translate create && ts-node -P scripts/tsconfig.json scripts/build-translate diff"
   },
